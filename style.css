@@ -1,0 +1,56 @@
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 20px;
+}
+body {
+	overflow: hidden;
+}
+/* style.css */
+.hidden {
+	display: none;
+  }
+  #startButton {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: purple; /* Change background color to purple */
+	color: white; /* Change text color to white for better contrast */
+	border: none; /* Remove any border */
+	border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  #animateBox {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation: none;
+  }
+  @keyframes move {
+	from {left: 0;}
+	to {left: 200px;}
+  }
+  
